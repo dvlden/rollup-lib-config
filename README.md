@@ -31,4 +31,4 @@ you push any changes to Git or Npm, make sure to update some important files.
 
 &nbsp;
 
-> Made with :heart: by Nenad Novaković, dvlden.
+> Made by Nenad Novaković, dvlden.
