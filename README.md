@@ -10,7 +10,7 @@ it is as minimal as possible. Also, it resolves the module name automatically.
 
 ## Getting started
 
-- `git clone https://github.com/dvlden/rollup-config.git`
+- `git clone https://github.com/dvlden/rollup-lib-config.git`
 - `npm i`
 
 
