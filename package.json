@@ -1,5 +1,5 @@
 {
-  "name": "rollup-config",
+  "name": "rollup-lib-config",
   "description": "Personal Rollup configuration for module building.",
 
   "main": "dist/index.js",
@@ -12,9 +12,9 @@
     "build": "rimraf dist && rollup -c"
   },
 
-  "homepage": "https://github.com/dvlden/rollup-config#readme",
-  "bugs": "https://github.com/dvlden/rollup-config/issues",
-  "repository": "github:dvlden/rollup-config",
+  "homepage": "https://github.com/dvlden/rollup-lib-config#readme",
+  "bugs": "https://github.com/dvlden/rollup-lib-config/issues",
+  "repository": "github:dvlden/rollup-lib-config",
 
   "author": {
     "name": "Nenad Novaković",
@@ -24,9 +24,11 @@
 
   "keywords": [
     "rollup",
-    "rollup-config",
-    "module-build",
-    "build-system"
+    "config",
+    "build",
+    "bundle",
+    "module",
+    "library"
   ],
 
   "browserslist": [
