@@ -1,13 +1,17 @@
 import babel from 'rollup-plugin-babel'
 import resolve from 'rollup-plugin-node-resolve'
+import { uglify } from 'rollup-plugin-uglify'
 import * as pkg from './package.json'
+
+const isProduction = process.env.BUILD === 'production'
 
 export default {
   input: 'src/index.js',
 
   plugins: [
     resolve(),
-    babel()
+    babel(),
+    isProduction && uglify()
   ],
 
   output: {

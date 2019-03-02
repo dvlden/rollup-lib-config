@@ -1,27 +1,22 @@
 {
   "name": "rollup-lib-config",
   "description": "Personal Rollup configuration for module building.",
-
   "main": "dist/index.js",
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
-
   "scripts": {
     "dev": "rollup -c -w -m inline",
-    "build": "rimraf dist && rollup -c"
+    "build": "rimraf dist && rollup -c --environment BUILD:production"
   },
-
   "homepage": "https://github.com/dvlden/rollup-lib-config#readme",
   "bugs": "https://github.com/dvlden/rollup-lib-config/issues",
   "repository": "github:dvlden/rollup-lib-config",
-
   "author": {
     "name": "Nenad Novaković",
     "email": "n.dvlden@gmail.com",
     "url": "https://dvl.sh/"
   },
-
   "keywords": [
     "rollup",
     "config",
@@ -30,19 +25,18 @@
     "module",
     "library"
   ],
-
   "browserslist": [
     "last 1 major version",
     "> 1%"
   ],
-
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.56",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.56",
-    "@babel/preset-env": "^7.0.0-beta.56",
-    "rimraf": "^2.6.2",
-    "rollup": "^0.64.1",
-    "rollup-plugin-babel": "^4.0.0-beta.8",
-    "rollup-plugin-node-resolve": "^3.3.0"
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.3.4",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.4.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-uglify": "^6.0.2"
   }
 }
