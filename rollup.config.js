@@ -1,26 +1,23 @@
-import babel from 'rollup-plugin-babel'
-import resolve from 'rollup-plugin-node-resolve'
-import { uglify } from 'rollup-plugin-uglify'
-import * as pkg from './package.json'
-
-const isProduction = process.env.BUILD === 'production'
+import typescript from 'rollup-plugin-typescript2'
+import pkg from './package.json'
 
 export default {
-  input: 'src/index.js',
+  input: './src/index.ts',
 
-  plugins: [
-    resolve(),
-    babel(),
-    isProduction && uglify()
+  output: [
+    {
+      file: pkg.module,
+      format: 'es'
+    },
+    {
+      file: pkg.main,
+      format: 'cjs'
+    }
   ],
 
-  output: {
-    file: pkg.main,
-    format: 'umd', // amd, cjs, es, iife, umd
-    name: (() =>
-      pkg.name.split('-').map(word =>
-        word.charAt(0).toUpperCase() + word.slice(1)
-      ).join('')
-    )()
-  }
+  plugins: [
+    typescript({
+      clean: true
+    })
+  ]
 }
