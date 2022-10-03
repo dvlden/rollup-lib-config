@@ -11,20 +11,19 @@ Tests are handled by the Jest testing framework.
 
 ## Getting started
 
-- `git clone https://github.com/dvlden/rollup-lib-config.git`
-- `npm i`
+- `gh repo clone dvlden/rollup-lib-config`
+- `pnpm i`
 
 
 ### Commands
 
-- `npm run test` - run all tests
-- `npm run build` - clean output directory and build for production
+- `pnpm run test` - run all tests
+- `pnpm run build` - clean output directory and build for production
 
 
 ## Important Notes
 
-If you cloned my repository and want to use this for modules development, before
-you push any changes to Git or Npm, make sure to update some important files.
+If you cloned my repository and want to use this for modules development, before you push any changes to Git or Npm, make sure to update some important files.
 
 - package.json
 - readme
